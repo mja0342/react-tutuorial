@@ -1,23 +1,20 @@
-import logo from './logo.svg';
+// import Demo from "./Components/Demo";
+// import FunctionalDemo1 from "./Components/FunctionalDemo1";
+// import FunctionalDemo2 from "./Components/FunctionalDemo2";
+// import FunctionalDemo3 from "./Components/FunctionalDemo3";
 import './App.css';
+import TodoList from "./Components/TodoList";
+
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { faTrash, faPlus, faEdit } from "@fortawesome/free-solid-svg-icons";
+// import Sample from "./Components/Sample";
+// import Parent from "./Components/Parent";
+library.add(faTrash, faEdit, faPlus);
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <TodoList/>
     </div>
   );
 }
